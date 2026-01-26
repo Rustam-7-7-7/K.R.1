@@ -1,6 +1,6 @@
 import json
 
-from utils import get_greeting, process_transactions, fetch_currency_data, fetch_stock_data
+from src.utils import get_greeting, process_transactions, fetch_currency_data, fetch_stock_data
 
 
 def main_page(date_time_str):
@@ -35,8 +35,8 @@ def main_page(date_time_str):
 # ПРОВЕРКА
 
 # Пример строки с датой и временем, которая соответствует данным в файле
-test_datetime = "2021-10-10 17:30:00"
-
-# Вызов функции и вывод результата
-result = main_page(test_datetime)
-print(result)
+# test_datetime = "2021-10-10 17:30:00"
+#
+# # Вызов функции и вывод результата
+# result = main_page(test_datetime)
+# print(result)

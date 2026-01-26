@@ -28,6 +28,7 @@ def get_greeting(date_time_str):
 
 def process_transactions(date_time_str):
     ''' Функция для обработки транзакций. '''
+
     # Загрузка данных из Excel
     df = pd.read_excel("../data/operations.xlsx")
 
@@ -61,6 +62,7 @@ def process_transactions(date_time_str):
 
 def fetch_currency_data(currencies):
     ''' Функция для получения данных о валютах. '''
+
     base_url = "https://api.exchangerate-api.com/v4/latest/RUB"
     currency_data = []
     for currency in currencies:
@@ -79,6 +81,7 @@ def fetch_currency_data(currencies):
 
 def fetch_stock_data(stocks):
     ''' Функция для получения данных об акциях. '''
+
     stock_data = []
     api_key = os.getenv("API_KEY")
     base_url = "https://www.alphavantage.co/query"  # Исправленный базовый URL
